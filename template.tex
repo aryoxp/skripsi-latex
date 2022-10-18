@@ -1,0 +1,79 @@
+\documentclass[11pt]{skripsi-filkom}
+
+\title{Title and Description of The Document as a Template for the Skripsi at Filkom Judulnya Agak Panjang}
+\titleen{Judul Skripsi dalam Bahasa Inggris}
+
+\nama{Sunama Mahasiswa}
+\nim{22211234918239823}
+
+\prodi{Sistem Informasi}
+\departemen{Sistem Informasi}
+\fakultas{Fakultas Ilmu Komputer}
+\universitas{Universitas Brawijaya}
+\tahun{2022}
+
+\tanggalujian{4 September 2022}
+\pembimbingsatu{Djoko Bimbing Satu, Ph.D}
+\nikpembimbingsatu{NIP 123456789}
+
+% kalau pembimbing tunggal
+\pembimbingdua{}
+\nikpembimbingdua{}
+
+% kalau ada pembimbing dua
+% enable dua baris command berikut ini:
+% \pembimbingdua{Dr. dr. Djoki Bimbing Dua, Dr.Sc}
+% \nikpembimbingdua{NIK 983298344}
+
+% Jika ini adalah proposal
+% enable dua baris berikut ini:
+\kadep{}
+\nipkadep{}
+
+% Jika ini adalah naskah akhir
+% enable dua baris command berikut ini:
+% \kadep{Dr.Phil Djoku Kadep, S.Kom., M.Dcs, Ph.D}
+% \nipkadep{NIP 001923189283398233}
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\maketitle
+\addtocontents{toc}{\vspace{5mm}}
+\pagenumbering{roman}
+\setcounter{page}{0}
+\lembarpengesahan
+\pernyataanorisinalitas
+\include{prakata.tex}
+\include{abstrak.tex}
+\include{abstract.tex}
+
+\addcontentsline{toc}{section}{Daftar Isi}
+\tableofcontents
+\listoftables
+\listoffigures
+\listofappendix
+
+\include{babs/1-pendahuluan.tex}
+\include{babs/2-landasan-pustaka.tex}
+\include{babs/3-metodologi.tex}
+\include{babs/4-hasil.tex}
+\include{babs/5-pembahasan.tex}
+\include{babs/6-penutup.tex}
+
+
+\renewcommand{\refname}{\centering\LARGE\MakeUppercase{Daftar Referensi}}
+\addcontentsline{toc}{section}{Daftar Pustaka}
+\bibliography{referensi}
+\bibliographystyle{apalike}
+
+\include{lampiran.tex}
+
+\end{document}
